@@ -8,7 +8,17 @@ during runtime. This is chosen for simplicity's sake.
 
 ## Running locally
 
-`node server/src/index.js`
+To initiate the required dependency, run:
+
+```bash
+npm install
+```
+
+After this, the server instance can be run by executing the following command:
+
+```bash
+node server/src/index.js
+```
 
 ## Folder structure - Server
 
