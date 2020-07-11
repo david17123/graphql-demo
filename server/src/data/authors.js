@@ -1,10 +1,10 @@
 const authors = [
   {
-    id: 1,
+    id: "1",
     name: "Joanne Rowling",
   },
   {
-    id: 2,
+    id: "2",
     name: "John Ronald Reuel Tolkien",
   },
 ];

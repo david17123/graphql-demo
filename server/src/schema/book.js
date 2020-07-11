@@ -6,6 +6,11 @@ const typeDef = `
     title: String
     author: Author
   }
+
+  input BookInput {
+    title: String!
+    authorId: ID!
+  }
 `;
 
 const resolver = {

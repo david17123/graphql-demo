@@ -2,14 +2,14 @@ const { getBooks } = require('../model/book');
 
 const typeDef = `
   type Query {
-    books(authorId: Int): [Book]
+    books(authorId: ID): [Book]
   }
 `;
 
 const resolver = {
   Query: {
     books: (parent, args) => {
-      return getBooks(args.authorId);
+      return getBooks(args.authorId ? args.authorId.toString() : undefined);
     },
   },
 };
