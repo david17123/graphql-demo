@@ -1,4 +1,4 @@
-const { getBooks } = require('../model/author');
+const { getBooks } = require('../model/book');
 
 const typeDef = `
   type Author {
