@@ -6,6 +6,10 @@ const typeDef = `
     name: String
     books: [Book]
   }
+
+  input AuthorInput {
+    name: String!
+  }
 `;
 
 const resolver = {

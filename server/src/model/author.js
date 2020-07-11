@@ -20,7 +20,29 @@ const getAuthorById = (id) => {
   return authorsData.find(author => author.id === id);
 };
 
+const addAuthor = (name) => {
+  if (!name) {
+    throw new Error('Missing name');
+  }
+  const authorAlreadyExists = !!authorsData.find(author => author.name === name);
+  if (authorAlreadyExists) {
+    throw new Error('Author already exists');
+  }
+
+  const newId = authorsData.reduce((maxId, book) => {
+    const authorId = Number(book.id);
+    return authorId > maxId ? authorId : maxId;
+  }, 0) + 1;
+  const newAuthor = {
+    id: newId.toString(),
+    name,
+  };
+  booksData.push(newAuthor);
+  return newAuthor;
+};
+
 module.exports = {
   getAuthors,
   getAuthorById,
+  addAuthor,
 };
