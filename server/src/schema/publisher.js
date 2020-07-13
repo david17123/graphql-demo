@@ -5,9 +5,7 @@ const typeDef = `
   }
 `;
 
-const resolver = {
-  Publisher: {},
-};
+const resolver = {};
 
 module.exports = {
   typeDef,
