@@ -1,7 +1,7 @@
 const typeDef = `
   type Publisher {
-    id: ID
-    name: String
+    id: ID!
+    name: String!
   }
 `;
 

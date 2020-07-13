@@ -3,8 +3,8 @@ const { getPublisherById } = require('../model/publisher');
 
 const typeDef = `
   type Book {
-    id: ID
-    title: String
+    id: ID!
+    title: String!
     isbn13: String
     isbn: String
     publishMonth: Month
