@@ -11,7 +11,7 @@ during runtime. This is chosen for simplicity's sake.
 To initiate the required dependency, run:
 
 ```bash
-npm install
+cd server && npm install
 ```
 
 After this, the server instance can be run by executing the following command:
