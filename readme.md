@@ -8,7 +8,7 @@ during runtime. This is chosen for simplicity's sake.
 
 ## Running locally
 
-To initiate the required dependency, run:
+To install the required dependencies, run:
 
 ```bash
 cd server && npm install
