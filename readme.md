@@ -11,7 +11,7 @@ during runtime. This is chosen for simplicity's sake.
 To install the required dependencies, run:
 
 ```bash
-cd server && npm install
+npm install --prefix server
 ```
 
 After this, the server instance can be run by executing the following command:
